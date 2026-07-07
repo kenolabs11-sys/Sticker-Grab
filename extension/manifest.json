@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "StickerGrab — TikTok Sticker Exporter",
+  "version": "2.0",
+  "description": "Preview and export TikTok DM stickers.",
+  "author": "kenolabs",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["http://127.0.0.1:8765/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.tiktok.com/messages*"],
+      "js": ["content.js"]
+    }
+  ]
+}
