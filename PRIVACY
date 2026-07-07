@@ -1,0 +1,39 @@
+# Privacy Policy — StickerGrab
+
+_Last updated: July 2026_
+
+StickerGrab is built by KenoLabs on a simple principle: **your data stays on your machine.** There is no StickerGrab server, no user accounts, and no analytics/telemetry of any kind. This document explains exactly what data the app touches and where it goes.
+
+## What StickerGrab does locally
+
+- **Stickers and GIFs you grab** from TikTok DMs (via the browser extension) are saved to a folder on your own computer (e.g. `...\KenoLabs\StickerGrab\media` on Windows). They never pass through any KenoLabs server — the extension sends them directly to the desktop app running on the same machine (over a local connection that never leaves `127.0.0.1`).
+- **Packs, settings, and app data** are stored locally in the app's own data directory on your machine.
+- **Bot tokens** (Telegram and/or Discord, if you choose to connect them) are stored locally on your machine and are used only to make direct API calls from your computer to Telegram's or Discord's own servers — never to any KenoLabs server, because none exists. Tokens are masked in the UI and are never logged.
+
+## What leaves your machine, and to where
+
+The only network activity StickerGrab initiates is:
+
+1. **TikTok's own CDN** — to load the sticker images you're grabbing (this happens as part of normal TikTok browsing; the extension only reads images already loaded in your browser).
+2. **Telegram's Bot API** (`api.telegram.org`) — only if you connect Telegram in Settings, and only when you explicitly send a pack. Communication happens using your own bot's token.
+3. **Discord's API** (`discord.com`) — only if you connect Discord in Settings, and only when you explicitly send a pack. Communication happens using your own bot's token.
+
+StickerGrab does not run its own backend, does not collect crash reports, usage statistics, or any other telemetry, and does not share data with any third party beyond the direct API calls above, which you initiate yourself.
+
+## Third-party terms that still apply
+
+Using StickerGrab to grab content from TikTok is subject to **TikTok's own Terms of Service**. Content you grab was created by other people (or by TikTok) — please respect ordinary copyright norms: this tool is intended for personal use (organizing and re-sharing stickers you've received), not for redistributing or selling other people's content without permission. Sending packs via Telegram or Discord is subject to **Telegram's** and **Discord's** respective Terms of Service, since you're using your own bot on their platforms.
+
+## Your controls
+
+- You can disconnect Telegram/Discord at any time in Settings, which clears the stored token locally.
+- You can delete any sticker, pack, or your entire local media folder at any time — nothing is recoverable from a KenoLabs server, because nothing is stored there.
+- Uninstalling the app removes its local data directory; you may want to manually confirm the media folder is deleted too if you want to fully clear your data.
+
+## Changes to this policy
+
+If this policy changes, the update will be reflected in this file in the [GitHub repository](https://github.com/kenolabs11-sys/Sticker-Grab), with the "Last updated" date above revised accordingly.
+
+## Contact
+
+Questions or concerns: open an issue at [github.com/kenolabs11-sys/Sticker-Grab/issues](https://github.com/kenolabs11-sys/Sticker-Grab/issues), or reach out via [kenolabs.dev](https://kenolabs.dev).
