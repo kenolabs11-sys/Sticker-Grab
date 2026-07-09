@@ -32,7 +32,7 @@ StickerGrab has no backend server — everything runs on your machine and talks 
 
 ## Getting started
 
-1. **Download** the latest installer for your platform from [Releases](../../releases) (Windows `.exe`/`.msi`, macOS `.dmg`).
+1. **Download** the latest installer for your platform from [Releases](../../releases) (Windows `.exe`, macOS `.dmg`).
 2. Open the app — it'll walk you through installing the browser extension (supported: Chrome, Brave, Edge, Opera, Vivaldi).
 3. Open TikTok DMs, click **Export Stickers** on a chat with stickers you want.
 4. Back in the app, browse your **Collection**, build a **Pack**, convert to GIF if you like.
